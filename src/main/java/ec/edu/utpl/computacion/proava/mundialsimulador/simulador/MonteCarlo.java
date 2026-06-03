@@ -85,7 +85,7 @@ public class MonteCarlo {
 
         for (int i = 1; i <= n; i++) {
             SimuladorTorneo.ResultadoTorneo r = simuladorTorneo.ejecutar(grupos,
-                    String.format("Montecarlo %d/%d", i, n));
+                    String.format("jitacuri %d/%d", i, n));
 
             // Contar campeonato
             campeonatos.merge(r.campeon, 1, Integer::sum);
